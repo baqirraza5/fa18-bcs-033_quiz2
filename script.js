@@ -38,6 +38,7 @@ function handleFormSubmit(e) {
       name_err = false;
     } else {
       $("#form__nameError").hide();
+      $("#form__nameError").removeClass("form__error");
       $("#name").removeClass("error");
       name_err = true;
     }
@@ -67,6 +68,7 @@ function handleFormSubmit(e) {
       email_err = false;
     } else {
       $("#form__emailError").hide();
+      $("#form__emailError").removeClass("form__error");
       $("#email").removeClass("error");
       email_err = true;
     }
@@ -95,6 +97,7 @@ function handleFormSubmit(e) {
       pass_err = false;
     } else {
       $("#form__passError").hide();
+      $("#form__passError").removeClass("form__error");
       $("#password").removeClass("error");
       pass_err = true;
     }
@@ -113,6 +116,7 @@ function handleFormSubmit(e) {
       confirmPass_err = false;
     } else {
       $("#form__confirmPassError").hide();
+      $("#form__confirmPassError").removeClass("form__error");
       $("#confirm_password").removeClass("error");
       confirmPass_err = true;
     }
